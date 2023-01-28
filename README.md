@@ -1,9 +1,6 @@
-# HTML_Cheat_Sheets
-
 # HTML Cheat Sheets
 
 ## HTML Basic Elements
-
 | Element            | Description                                             |
 | ------------------ | ------------------------------------------------------- |
 | `<!-- ... -->`     | `<!-- -->` is strictly speaking not an HTML element. You can use it to add a comment. Text written between `<!-- and -->` is not displayed in the web browser. For example: `<!-- I am comment -->` |
@@ -18,7 +15,6 @@
 
 
 ## Global HTML attributes
-
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
 | `accesskey` | A keyboard shortcut for accessing an element: `<a href="#" accesskey="h">...</a>` |
@@ -54,12 +50,48 @@
 | `<style>...</style>` | You use this to define the stylesheet information for an HTML document. If you want to use an external stylesheet file, you must use the take the standalone `<link>` tag. |
 | `<summary>...</summary>` | The element defines a visible heading for the details element. In conjunction with `<details>` this heading can be clicked and expanded and collapsed. |
 
+
 ### HTML attribute for `<details>`
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
-| `open` | This is a standalone boolean attribute, and it specifies, when used, that the details element is expanded when the page is loaded. Without using this HTML attribute, the content of the details element is collapsed by default. 
-`<details open>`
- `<summary>Copyright 2022</summary>`
- `<p> - by Rick Sample.</p>`
- `<p>All content and graphics ...</p>`
-`</details>` |
+| `open` | This is a standalone boolean attribute, and it specifies, when used, that the details element is expanded when the page is loaded. Without using this HTML attribute, the content of the details element is collapsed by default. `<details open><summary>Copyright 2022</summary><p> - by Rick Sample.</p><p>All content and graphics ...</p></details>` |
+
+
+### HTML attributes for `<style>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `media` | Specifies the media type or device for which this style is to be used. |
+| `type` | Specifies the MIME type of the stylesheet language, which for CSS is `"text/css"`. In current HTML, this specification is no longer mandatory, as it was in HTML 4.01, because CSS is used as default if no other specification is made. |
+
+
+### HTML elements for text markup
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<abbr>...</abbr>` | The element is used for abbreviations or acronyms. The title attribute is also often used for this element, where the meaning of the abbreviation is written out and displayed by the web browser as a tooltip when the user hovers over it. tooltip when the user hovers over it with the mouse: `<abbr title="value-added_tax">VAT.</abbr>` |
+| `<address>...</address>` | This element should be used to note the contact information of the author or owner of a page or article. |
+| `<b>...</b>` | With this element you can mark up a text that is to stand out from the from the usual continuous text. Usually, this text is displayed in bold. However, the b element should not be misused for formatting purposes, for which you should use CSS instead. However, you should use the b element only if no more suitable HTML element is appropriate for this text. For highlighting you should use `<em>`, for an important text `<strong>` and to mark up text `<mark>` should be preferred. |
+| `<bdi>...</bdi>` | This defines an area for a bidirectional text that could be formatted in a different could be formatted in a different direction. This element is useful when a text is taken from a database or from a user input where the writing direction is not known. |
+| `<bdo>...</bdo>` | This element is used to change the text direction within a continuous text. continuous text. This is very useful, for example, when you want to display a text that is written from right to left (such as Hebrew or Arabic) |
+| `<blockquote>...</blockquote>` | With this you usually quote a text from another source.  |
+| `<cite>...</cite>` | This element should be used since HTML5 to mark up a title of books, movies, music, exhibitions, paintings, etc. This element should not be used for people.  |
+| `<code>...</code>` | Within a continuous text you use this element to draw the text as computer code. If you want to mark up multiple lines as computer code you should use the pre element. |
+| `<del>...</del>` | A change marker that you use to represent text within body text as deleted and no longer valid. The counterpart to this element is `<ins>`. |
+| `<dfn>...</dfn>` | You mark a text that you write down in between as a definition. You can use it, for example, to mark a defined term which you will explain in the subsequent text. |
+| `<em>...<em>` | You should use this element if you want to emphasize words or passages linguistically. If, on the other hand, you only want to bring a word or passage into focus, you should use `<strong>` instead |
+| `<i>...</i>` | Since HTML5, you should use this element for content specific technical terms, a thought, scientific names or foreign language words. Should only be used when no other fits. |
+| `<ins>...</ins>` | A change marker that you can use to show a text as newly inserted within a continuous text as newly inserted. The counterpart to this element is `<del>`. |
+| `<kbd>...</kbd>` | This element should be used to mark a letter, a word or a word or passage in the continuous text as a keyboard input. |
+| `<mark>...</mark>` | This element should be used to mark words or passages in a continuous text as marked text. In practice, you could use `<mark>`, for example, to highlight a search term you have found. |
+| `<pre>...</pre>` | This is used to mark up preformatted text. All whitespace characters are displayed in the web browser as they appear in the text. Usually, this text is also output in a monospace font. |
+| `<q>...</q>` | Identify individual words or text passages as quoted or spoken text. text. The web browser then usually places this text between quotation marks. |
+| `<ruby>``<rt>``<rp>` | Enclosing content for Ruby annotations to indicate the pronunciation of East Asian characters. |
+| `<s>...</s>` | Mark a text as no longer valid or obsolete. For replaced or deleted text, you should use the del element instead. |
+| `<samp>...</samp>` | You should use the element for an exemplary screen output of programs. |
+| `<small>...</small>` | This allows you to mark a text as small print information, such as is used for copyright information, license information or legal notices. |
+| `<strong>...</strong>` | You can use this to mark words or text passages that are particularly important in terms of content in order to give the text a special signal or warning effect. |
+| `<sub>...</sub>` | This element is used to lower text. The element is often used in mathematical and chemical formulas, for example. |
+| `<sup>...</sup>` | This sets the text noted in between higher. The element is also used more often in mathematical and chemical formulas formulas. |
+| `<time>...</time>` | The element is used to mark up date and time information so that this information is also readable and thus usable by search engines, for example. |
+| `<u>...</u>` | This allows you to underline text as proper noun underlining, such as is common in Chinese writing, or incorrect words. The text is usually underlined by the web browser. |
+| `<var>...</var>` | This allows you to mark up a text as a variable or constant that is used, for example, in a mathematical expression or with an identifier of a variable in a programming language. |
+| `<wbr>...</wbr>` | This defines an optional line break within a word. word. The line break only occurs at this point if it is necessary for optimal display in the web browser, so that the reader does not have to reader does not have to scroll to the right. |
