@@ -84,7 +84,7 @@
 | `<mark>...</mark>` | This element should be used to mark words or passages in a continuous text as marked text. In practice, you could use `<mark>`, for example, to highlight a search term you have found. |
 | `<pre>...</pre>` | This is used to mark up preformatted text. All whitespace characters are displayed in the web browser as they appear in the text. Usually, this text is also output in a monospace font. |
 | `<q>...</q>` | Identify individual words or text passages as quoted or spoken text. text. The web browser then usually places this text between quotation marks. |
-| `<ruby>``<rt>``<rp>` | Enclosing content for Ruby annotations to indicate the pronunciation of East Asian characters. |
+| `<ruby>`,`<rt>`,`<rp>` | Enclosing content for Ruby annotations to indicate the pronunciation of East Asian characters. |
 | `<s>...</s>` | Mark a text as no longer valid or obsolete. For replaced or deleted text, you should use the del element instead. |
 | `<samp>...</samp>` | You should use the element for an exemplary screen output of programs. |
 | `<small>...</small>` | This allows you to mark a text as small print information, such as is used for copyright information, license information or legal notices. |
