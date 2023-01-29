@@ -1,5 +1,6 @@
 # HTML Cheat Sheets
 
+All HTML5 elements and their attributes.
 
 ## HTML Basic Elements
 | Element            | Description                                             |
