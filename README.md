@@ -2,6 +2,9 @@
 
 All HTML5 elements and their attributes.
 
+Detailed information about HTML can be found here - [HTML Guide](https://github.com/BellaMrx/HTML_Guide) - Detailed guide about HTML5 (all basics for HTML) + templates.
+
+
 ## HTML Basic Elements
 | Element            | Description                                             |
 | ------------------ | ------------------------------------------------------- |
