@@ -140,3 +140,121 @@
 | `<progress>...</progress>` | This allows you to visualize a progress bar or a history for a task task such as a questionnaire or a download. For a dynamic progress indicator, you need a scripting language such as JavaScript. |
 | `<select>...</select>` | This allows you to define a selection list with fixed entries in a form from which the user can select an entry. An entry in the list, on the other hand, you define within the select element with the option element. |
 | `<textarea>...</textarea>` | Use this element to create a multiline text input field. |
+
+
+### HTML attributes for `<form>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `accept-charset` | This is used to specify the character set for the form data. Common values are UTF-8 for Unicode or ISO-8859-1 for Latin. In theory, however, you can use any character set. However, no web browser can handle all character sets. Therefore, to be on the safe side always use a widely used character set (such as UTF-8). |
+| `action` | With this you specify the URL or path to a file that is called with a submit button when submitting. Often, this is a (PHP) script that evaluates the entered form data evaluates. |
+| `autocomplete` | This allows you to enable autocompletion with the value `on` (= default value) and disable it with the value `off`. |
+| `enctype` | Defines how the data should be encoded when sent to the server. server. Only needed if `method="post"`. |
+| `method` | Specifies the HTTP method how the data should be transferred. With the default value get the data is sent with the URL and with `post` in the HTTP body. |
+| `name` | Sets a name for the form. The name is often used when evaluating other scripts. |
+| `novalidate` | This is a standalone attribute that allows you to skip validating form elements when the form is submitted. is submitted. |
+| `target` | This sets the target window of the calling content. Possible values for this are:  `_self` , `_blank`, `_top`, `_parent` |
+
+
+### HTML attributes for `<input>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `accept` | This allows you to specify the type of a file that will be accepted by the server. This attribute only makes sense in conjunction with `type="file"` for uploading files. |
+| `alt` | An alternative text if the graphic cannot be displayed. This attribute only makes sense in connection with graphical controls like `type="image"` |
+| `autocomplete` | This allows you to enable autocompletion with the value `on` (= default value) and disable it with the value `off`. |
+| `autofocus` | As soon as the web page is loaded, the input field gets the focus, and data can be entered. The attribute is a stand-alone attribute. Correctly, only one element in a form should contain this attribute. |
+| `checked` | This allows you to pre-select a checkbox (`type="checkbox"`) or a radio button (`type="radio"`) when the page is loaded is loaded. |
+| `disabled` | This stand-alone attribute allows you to disable an input field so that it cannot be selected and is grayed out. |
+| `form` | With this you determine with which form an input field is linked. is linked to. The value must be the id attribute of a form element. With attribute it is possible to note an input field outside the form element. |
+| `formaction` | Here you specify the URL or path to be called when submitting an input. This attribute overrides the actionAttribute of the form element and only makes sense in conjunction with `type="submit"` and `type="image"`. |
+| `formenctype` | Defines how the data should be encoded when sent to the server. server. Only needed if `method="post"`. This attribute overrides the enctype attribute of the form element and only makes sense with `type="submit"` and `type="image"`. |
+| `formmethod` | Specifies the HTTP method how the data should be transferred. With the default value get the data is sent with the URL and with post in the HTTP body. This attribute overrides the method attribute of the form element and only makes sense with `type="submit"` and `type="image"`. |
+| `formnovalidate` | This is a standalone attribute that allows you to skip validating form elements when the form is submitted. This attribute overrides the novalidate attribute of the form Element and only makes sense with `type="submit"` and `type="image"`. |
+| `formtarget` | This sets the target window of the calling content. This attribute overrides the target attribute of the form element and makes only makes sense with `type="submit"` and `type="image"`. |
+| `height` | Defines the height of an input element. Makes sense only with `type= "image"`. |
+| `list` | As value you pass the id attribute of a datalist element with predefined options for auto-completion. |
+| `max`,`min` | This allows you to specify the minimum or maximum value for an input field. You can use these two attributes for the following input fields: `type="number"`, `type="range"`, `type="date"`, `type= "datetime"`, `type="datetime-local"`, `type="month"`, `type="time"` and `type="week"`. |
+| `maxlength` | This sets the maximum length of characters. |
+| `multiple` | With the boolean attribute you can allow the user, to enter more than one value. This attribute works with `type="file"` and `type="email"`. |
+| `name` | Sets a name for the input element. The name is often used when evaluating other scripts. |
+| `pattern` | This allows you to define a regular expression as a search pattern, which must match the contents of the input field. |
+| `placeholder` | This allows you to define a simple text as a placeholder, which is displayed as long as the input field is empty. It makes sense that this is a hint or help with regard to what the user should the user should enter here (e.g. your e-mail address in the case of an text input field for an e-mail). |
+| `readonly` | When you use this standalone attribute, it is not possible to modify the input element is not possible. The input field is read only |
+| `required` | With this standalone attribute you specify that this input field has to be must be filled in before it can be submitted. This attribute can be used for the following input elements: `type="text"`, `type="search"`, `type="url"`, `type="tel"`, `type="email"`, `type= "password"`, `type="date"`, `type="number"`, `type="checkbox"`, `type= "radio"` and `type="file"`. |
+| `size` | This sets the visible width of the visible input element in characters. This attribute can be used with the following input elements: `type="text"`, `type="search"`, `type="tel"`, `type="url"`, `type="email"` and `type="password"`. |
+| `src` | This sets the URL to a graphic for a button of type `type="image"`. |
+| `step` | This is used to specify the value of the increment (interval) with which the control field can be changed. This attribute can be used with the following input elements: `type="number"`, `type="range"`, `type= "date"`, `type="datetime"`, `type="datetime-local"`, `type="month"`, `type= "time"` and `type="week"`. |
+| `type` | This sets the type of the input field. Since HTML5 many new many new types have been added here.  |
+| `value` | With this you set the value of an input element. Depending on the type of the input field, this value is used differently. |
+| `width` | Defines the width for the input element. This value only makes sense in conjunction with `type="image"`. |
+
+
+### Types of `<input>` elements for the `type` HTML attribute
+| Type               | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `type="button"`    | Button |
+| `type="checkbox"`  | Checkbox |
+| `type="color"` | Color selection |
+| `type="date"` | Date selection |
+| `type="datetime"` | date and time selection |
+| `type="datetime-local"` | local date and time selection |
+| `type="email"` | e-mail address |
+| `type="file"` | File selection |
+| `type="hidden"` | hidden input field |
+| `type="image"` | graphical control element (button) |
+| `type="month"` | month selection |
+| `type="number"` | number field |
+| `type="password"` | password input field |
+| `type="radio"` | radio button |
+| `type="range"` | slider button |
+| `type="reset"` | Reset button |
+| `type="search"` | Search input field |
+| `type="submit"` | Submit button |
+| `type="tel"` | Phone number |
+| `type="text"` | one-line text field (default value) |
+| `type="time"` | Time selection |
+| `type="url" ` | URL input field |
+| `type="week"` | Week selection |
+
+
+### HTML attributes for `<textarea>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `autofocus` | Once the web page is loaded, the textarea element gets the focus, and data can be entered. |
+| `cols` | Specifies the width of the text box. This is the number of characters that can be can be entered per line in a multiline text input field. can be entered. |
+| `disabled` | With this attribute standing alone you can deactivate the text field. |
+| `form` | This specifies which form the text field is linked to. The value must be the id attribute of a form element. With this attribute it is possible to note a textarea field outside the form element. |
+| `maxlength` | This allows you to set the maximum number of characters that can be entered into the multiline text input field. the multiline text input field. |
+| `name` | Sets a name for the textarea element. The name is often used when evaluating other scripts. |
+| `placeholder` | This allows you to define a simple text as a placeholder, which is displayed as long as the input field is empty. is displayed as long as the input field is empty. It makes sense that this is a hint or help with regard to what the user should enter here. the user should enter here. |
+| `readonly` | If you use this stand-alone attribute, it is not possible to change the text field. of the text field is not possible. The input field will be read-only. |
+| `required` | With this single attribute you specify that this text field must be filled in before the form can be submitted. must be filled in before the form can be submitted. |
+| `rows` | This specifies the number of visible lines in the multiline input field. |
+| `wrap` | This lets you specify how line breaks in the multiline text field are to be should be handled when you submit the form. With the default value `wrap="soft"` no additional line breaks will be added (only the ones you manually inserted yourself). With the second possible value `wrap="hard"` will add all the line breaks made by cols will be added. In this case, of course the cols attribute must also be defined with a value. |
+
+
+### HTML attributes for `<button>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `autofocus` | Once the web page is loaded, the button element gets the focus and is immediately selected. |
+| `disabled` | With this attribute standing alone you can deactivate the button. |
+| `form` | This specifies which form the button is linked to. The value must be the id attribute of a form element. With this attribute it is possible to note a button outside the form element. |
+| `formaction` | Here you specify the URL or path to a server program, to be called when the form is submitted. This attribute overrides the action attribute of the form element. |
+| `formenctype` | Defines how the data should be encoded when sent to the server. server. Required only if `method="post"`. This attribute overrides the enctype attribute of the form element |
+| `formmethod` | Specifies the HTTP method how the data should be transferred. With the default value get, the data is sent with the URL and with post in the HTTP body. This attribute overrides the method attribute of the form element. |
+| `formnovalidate` | This is a standalone attribute that allows you to skip validating form elements when the form is submitted. is submitted. This attribute overrides the novalidate attribute of the form element. |
+| `formtarget` | This sets the target window of the calling content. This attribute overrides the target attribute of the form element. |
+| `name` | Sets a name for the button element. The name is often used when evaluating other scripts. |
+| `type` | Sets the type of the button. Possible values are: `type="button"`, `type="reset"`, `type="submit"` |
+| `value` | Sets a value for the button |
+
+
+### HTML attributes for `<select>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `autofocus` | As soon as the web page is loaded, the selection list gets the focus and is immediately selected. |
+| `disabled` | With this attribute alone you can deactivate the selection list. |
+| `form` | This specifies which form the drop-down list is linked to. The value must be the id attribute of a form element. With this attribute it is possible to note a select list outside of the form element. |
+| `multiple` | With this stand-alone attribute you specify that multiple items in the selection list can be selected by holding down the (Ctrl) or (cmd) key. |
+| `name` | Sets a name for the select element. The name is often used when evaluating other scripts. |
+| `required` | With this stand alone attribute you make it necessary that the user to select an item in the drop-down list before the form can be submitted. |
+| `size` | This sets the number of options that are visible at the same time in the selection list. |
