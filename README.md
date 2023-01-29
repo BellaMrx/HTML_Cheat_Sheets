@@ -1,5 +1,6 @@
 # HTML Cheat Sheets
 
+
 ## HTML Basic Elements
 | Element            | Description                                             |
 | ------------------ | ------------------------------------------------------- |
@@ -14,7 +15,7 @@
 | `<title>...</title>` | Defines the title of an HTML document. This element is required by every HTML document to be valid HTML. |
 
 
-## Global HTML attributes
+### Global HTML attributes
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
 | `accesskey` | A keyboard shortcut for accessing an element: `<a href="#" accesskey="h">...</a>` |
@@ -64,7 +65,7 @@
 | `type` | Specifies the MIME type of the stylesheet language, which for CSS is `"text/css"`. In current HTML, this specification is no longer mandatory, as it was in HTML 4.01, because CSS is used as default if no other specification is made. |
 
 
-### HTML elements for text markup
+## HTML elements for text markup
 | Element            | Description                                             |
 | ------------------ | ------------------------------------------------------- |
 | `<abbr>...</abbr>` | The element is used for abbreviations or acronyms. The title attribute is also often used for this element, where the meaning of the abbreviation is written out and displayed by the web browser as a tooltip when the user hovers over it. tooltip when the user hovers over it with the mouse: `<abbr title="value-added_tax">VAT.</abbr>` |
@@ -95,3 +96,47 @@
 | `<u>...</u>` | This allows you to underline text as proper noun underlining, such as is common in Chinese writing, or incorrect words. The text is usually underlined by the web browser. |
 | `<var>...</var>` | This allows you to mark up a text as a variable or constant that is used, for example, in a mathematical expression or with an identifier of a variable in a programming language. |
 | `<wbr>...</wbr>` | This defines an optional line break within a word. word. The line break only occurs at this point if it is necessary for optimal display in the web browser, so that the reader does not have to reader does not have to scroll to the right. |
+
+
+### HTML attribute for `<bdo>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `dir` | This global attribute must be used by the bdo element to specify the to specify the direction. The following two values are allowed are allowed:  `dir="rtl"`: right to left, `dir="ltr"`: left to right |
+
+
+### HTML attribute for `<blockquote>` and `<q>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `cite` | This allows you to specify the URL to the source from which the citation originated. comes from. For books, you can also include a link to the corresponding book page or to a web store where the book can be purchased. can be purchased. |
+
+
+### HTML attributes for `<del>` and `<ins>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `cite` | This allows you to specify the URL to a source that contains the reason for this change marker. |
+| `datetime` | This allows you to specify the date and time of the change (e.g.: YYYY-MM-DDThh:mm:ssTZD). |
+
+
+### HTML attribute for `<time>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `datetime` | With this you make a machine readable date and time specification. |
+
+
+## Form and input elements
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<button>...</button>` | With this you define a button similar to `<input type= "submit">`, except that you can include additional graphics and use other use other HTML elements. |
+| `<datalist>...</datalist>` | This defines a predefined list of options for a single-line text field for an input element. The datalist element uses autocompletion, where the user sees a kind of dropdown list of predefined values. Using the listAttribute in the input element, the element is linked to a datalistElement. You define the individual options of the list using the option element and value attribute. |
+| `<fieldset>...</fieldset>` | With the fieldset element you can combine several form elements like input fields into a logical group. Many web browsers additionally frame this area visually. You can also use the legend element to define a heading for this group. |
+| `<form>...</form>` | Use this element to define the HTML forms in the HTML document. |
+| `<input>` | With this you define an input field into which the user can enter different types of data. What kind of data this is and how the input element is represented depends on the typeAttribute used. |
+| `<label>...</label>` | Marks a text as a simple text label in the form. Using attribute, you can associate the text label with an input element and thus have a label set for an input field. |
+| `<legend>...</legend>` | Use the legend element to specify a heading for a fieldset group. |
+| `<meter>...</meter>` | This element is used to visualize a certain magnitude of scalar values with a state indicator and with the help of various HTML attributes. |
+| `<optgroup>...</optgroup>` | This allows you to define suboptions grouped in an extensive select selection list. |
+| `<option>...</option>` | This is used to define the individual entries of a select selection list, from which the user can choose. |
+| `<output>...</output>` | The output element specifies an output area for the result of calculations. This makes the output element the counterpart of the input element, so to speak. |
+| `<progress>...</progress>` | This allows you to visualize a progress bar or a history for a task task such as a questionnaire or a download. For a dynamic progress indicator, you need a scripting language such as JavaScript. |
+| `<select>...</select>` | This allows you to define a selection list with fixed entries in a form from which the user can select an entry. An entry in the list, on the other hand, you define within the select element with the option element. |
+| `<textarea>...</textarea>` | Use this element to create a multiline text input field. |
