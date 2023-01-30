@@ -628,7 +628,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 
 
 ---------------------------------------------------------------------------------
-The End
+### The End
 
 If you want to know more about HTML then check this out: [HTML Guide](https://github.com/BellaMrx/HTML_Guide).
 
