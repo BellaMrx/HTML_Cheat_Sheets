@@ -625,3 +625,15 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | ------------------ | ------------------------------------------------------- |
 | `name` | Here you specify the name of the parameter for the plug-in. |
 | `value` | Here you specify the value of the parameter for the plug-in. |
+
+
+---------------------------------------------------------------------------------
+The End
+
+If you want to know more about HTML then check this out: [HTML Guide](https://github.com/BellaMrx/HTML_Guide).
+
+On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development.
+
+Or check out my [GitHub profile](https://github.com/BellaMrx).
+
+Thanks for reading. I hope you enjoyed it or at least learned something.
