@@ -262,3 +262,366 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `name` | Sets a name for the select element. The name is often used when evaluating other scripts. |
 | `required` | With this stand alone attribute you make it necessary that the user to select an item in the drop-down list before the form can be submitted. |
 | `size` | This sets the number of options that are visible at the same time in the selection list. |
+
+
+### HTML attributes for `<meter>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `form` | This specifies which form the state indicator is linked to. The value must be the id attribute of a form element. element. With this attribute it is possible to note a state indicator outside of the form element. |
+| `high` | This sets a lower limit to the upper range of the scale. If this attribute is missing, `high` is initialized with the value of `max`. |
+| `low` | This sets an upper limit to the lower range of the scale. If this value is missing, `low` is initialized with the value of `min`. |
+| `max` | This sets the maximum value of the scale. If you do not use this attribute, `max="1"` will be used. |
+| `min` | With this you define the minimum value of the scale. If you do not use the attribute, `min="0"` is used. |
+| `optimum` | This sets the optimum value of the scale. This value should lie between the value of `min` and `max`. |
+| `value` | The value is absolutely required. With it you set the current value of the state. The value should be between `min` and `max`. |
+
+
+### HTML attributes for `<optgroup>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `disabled` | With the standalone attribute you can disable the entire group with option elements in the optgroup element. |
+| `label` | This creates a visible label for the optgroup element. |
+
+
+### HTML attributes for `<option>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `disabled` | With this standalone attribute you can disable the option. |
+| `label` | This allows you to define a shorter version of a text label for an option element. |
+| `selected` | Marks an option as preselected when the document is loaded. |
+| `value` | This sets a value that is passed to the server. |
+
+
+
+### HTML attributes for `<label>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `for` | With this attribute you define to which input element this text label is bound to. As value you have to use the id attribute of the input element to which you want to bind this text label. |
+| `form` | This specifies which form the text label is associated with. The value must be the id attribute of a form element. With this attribute it is possible to write the text label outside the form element. |
+
+
+### HTML attributes for `<fieldset>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `disabled` | This stand-alone attribute allows you to disable grouping. |
+| `form` | This specifies which form this grouping of elements is associated with. The value must be the id attribute of a form element. With this attribute it is possible to note the grouping outside the form element. |
+| `name` | Sets a name for the fieldset element. The name is often used when evaluating other scripts. |
+
+
+### HTML attributes for `<output>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `for` | With this attribute you determine to which input element(s) the output element is bound. As value you have to use the id attribute of the input element to which you want to bind this output element. This way you establish the relationship between the result of a calculation and the elements used for the calculation. |
+| `form` | This specifies which form the output element is associated with. The value must be the id attribute of a form element. With this attribute it is possible to note the output element outside the of the form element. |
+| `name` | Sets a name for the output element. The name is often used when evaluating other scripts. |
+
+
+### HTML attributes for `<progress>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `max` | With this you determine the maximum number of steps possible. |
+| `value` | Here you specify how many steps have currently been executed. |
+
+
+## Frames
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<iframe>` | The iframe element is preferably used to embed documents and other web pages. |
+
+
+
+### HTML attributes for `<iframe>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `height` | Specifies the height for the iframe element. |
+| `name` | Specifies a name for the iframe element. |
+| `sandbox` | This allows you to run the document used in the `<iframe>` with a higher security constraint. Possible values for this are allow-same-origin, allow-top-navigation, allow-forms, and allow-scripts. |
+| `seamless` | With this attribute standing alone, the document used in `<iframe>` is embedded as part of the web page, which means that the stylesheet definitions and link targets of the current document (can) also be applied to the content of the embedded document. |
+| `src` | This specifies the address to the source document to be embedded in the iframe element. |
+| `srcdoc` | This allows you to insert HTML code as a resource in the embedded frame instead of referencing it with the src attribute. |
+| `width` | With this you set the width for the iframe element. |
+
+
+## HTML elements for images and graphics
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<area>...</area>` | With this stand-alone element you define the individual reference-sensitive areas of a reference-sensitive graphic. An area element is always enclosed by a map element. |
+| `<canvas>...</canvas>` | This element creates an empty drawing surface (canvas) on which you can draw simple graphics with the Canvas 2D API, among other things. |
+| `<figure>`,`<figcaption>` | The figure element is used to group and label media content such as photos, videos, annotations, code samples, illustrations, and tables are logically grouped and labeled. The figcaption element, on the other hand, lets you add a caption for the figure element. The figcaption element can be noted as the first or last element within the of the figure element. |
+| `<img>` | The img element alone is used to include a graphic file in the HTML document. The HTML attributes `src` and `alt` must be used with this element. Mind you, the graphic itself is only referenced here and is not part of the HTML document. |
+| `<map>` | With this element you initiate the definition of the reference-sensitive graphic. The id or name attribute is passed the (anchor) name of the usemap (anchor) name of the usemap attribute of an img element that contains the link-sensitive graphic. With this you practically first create the relationship between a graphic with `<img>` and the map with `<map>`. Inside the map area, use the area elements to note the clickable areas of the reference-sensitive graphic. |
+| `<picture>` | With this container element, you can reference multiple image sources and let the browser select and load the appropriate image from different image from different image versions and load it. The picture element itself does but is only a container for the source elements it contains or the img element with the reference to the image source(s). Multiple image sources are specified with the source element. As a fallback, an img element is used at the end. |
+
+
+
+### HTML attributes for `<area>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `alt` | Allows you to specify an alternative text that will be displayed when the if the link-sensitive graphic is not displayed. For valid valid HTML, this attribute must also be used with any area element when the href attribute is used. |
+| `coords` | Here you specify the coordinates for the reference sensitive area. These are absolute values that you must separate with commas. |
+| `download` | You use this to specify a URL or pathname to a file that can be can be downloaded when the user clicks the link. |
+| `href` | Here you specify the link for the reference target of the link-sensitive area that will be called when the user clicks on it. If attribute is not used, this area element is not a hyperlink. |
+| `hreflang` | This specifies the language of the reference target of the reference-sensitive area. |
+| `media` | This allows you to specify the media type of the link or a resource. |
+| `rel` | This specifies the type of relationship between the current document and the link. Possible values are: `rel="alternate"`: link to an alternate version of the document, `rel="author"`: link to the author of the document, `rel="bookmark"`: permanent URL to create a bookmark, `rel="help"`: links to a help document, `rel="license"`: links to copyright information for the document, `rel="next"`: the next document in a selection of documents, `rel="nofollow"`: links that search engines should not follow(e.g. commercial advertising page), `rel="noreferrer"`: The web browser should not send an HTTP referrer header when the user follows the link, `rel="prefetch"`: specifies that the target resource should be cached, `rel="prev"`: the previous document in a selection of documents, `rel="search"`: the target document should be prefetched in the cache of the cache, `rel="tag"`: a keyword for the current document. |
+| `shape` | This determines the type of area for the reference-sensitive area of a reference-sensitive graphic. The possible values for this are: `shape="circle"`: a circle with the coordinates x (center from left), y (center from top) and r (radius) for the coord attribute, `shape="rect"`: a rectangle with the coordinates x1, y1 (upper left corner) and x2, y2 corner) and x2, y2 (bottom right corner) for the coord attribute, `shape="poly"`: a polygon with the coordinates x1, y1, x2, y2, ..., xn, yn (from the upper left corner) for the coord attribute. |
+| `target` | This sets the target window for the content to be called. Possible values for this are: `_self`: (default value) output in the same window, `_blank`: output in a new window or tab, `_top`: Output in the body of the window, `_parent`: output in the calling window. |
+| `type` | Sets the MIME type of the destination address. |
+
+
+### HTML attributes for `<canvas>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `height` | This specifies the height of the artboard. |
+| `width` | This defines the width of the artboard. |
+
+
+### HTML attributes for `<img>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `alt` | Allows you to specify an alternative text that will be displayed if the image could not be loaded. This attribute is required for valid HTML. |
+| `height` | With this you specify the height of the image source.n. |
+| `ismap` | This allows you to declare the image source as a reference-sensitive graphic with a server-side evaluation. |
+| `src` | This specifies the URL to the image source you want to reference. The specification can be absolute or relative. Besides the alt attribute this attribute is required for valid HTML. |
+| `usemap` | Use this to mark the image source as a reference-sensitive graphic. The value is a URI that leads to a place where the corresponding map element is noted. Since this map element is usually in the same file, this value is specified with a leading gate character and the name of the anchor (`usemap="#anchor"`). |
+| `width` | This specifies the width of the image source. |
+
+
+### HTML attributes for `<map>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `name` | Here you specify the name (without #) of the reference-sensitive graphic that you specified in the img element with the usemap attribute. You must use the attribute. |
+
+
+### HTML attribute for `<source>` in combination with `<picture>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `media` | This allows you to use media queries to create breakpoints for the images you want to load. |
+| `srcset` | With this you specify a comma-separated list with the image sources image sources. For each specified image source you can also specify the width and pixel density (default value: 1x). |
+| `src` | This is used to specify the URL to an image source. |
+| `size` | a comma-separated list with a media characteristic and the size specification |
+| `type` | This sets the MIME type for the image resource. |
+
+
+## HTML elements for audio and video
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<audio>...</audio>` | This element allows you to play audio files without special extensions. |
+| `<source>...</source>` | This element allows you to provide different versions of media content for audio and video files. |
+| `<track>...</track>` | This allows you to add text data as subtitles or captions while playing video and audio files. |
+| `<video>...</video>` | This element allows you to play video files without special extensions. |
+
+
+### HTML attributes for `<audio>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `autoplay` | The audio file is played automatically when the web page finishes loading. |
+| `controls` | Displays a bar with controls such as play, pause, etc., that allow the user to control the audio file. |
+| `loop` | When the audio file has finished playing, this attribute plays it again. |
+| `muted` | The sound of the audio file is muted with this attribute. |
+| `preload` | This allows you to specify how the audio file should be preloaded when the web page is loaded. The following values are possible: `preload="auto"`: (default) The web browser should load the complete audio file when the page is loaded; `preload="metadata"`: Only the metadata should be loaded, when the page is loaded; `preload="none"`: The browser should not load the audio file at all when the page is at all when the page is loaded. |
+| `src` | This specifies the location (URL) of the audio file. |
+
+
+### HTML attributes for `<source>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `media` | Allows you to specify the media type of the link or a resource. |
+| `src` | You use it to specify the location (URL) of an audio or video resource. |
+| `type` | This sets the type for the audio or video resource. Regarding the video element for video files, you can choose from the following types: `type="video/ogg"`: Ogg format; `type="video/mp4"`: MP4 format; `type="video/webm"`: WebM format. And for the audio element for audio files you can use the following types: `type="audio/mpeg"`: MP3 format; `type="audio/ogg"`: Ogg format; `type="audio/wav"`: WAV format. |
+
+
+### HTML attributes for `<track>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `default` | If multiple subtitles or captions are used, this attribute will with this attribute, a track element is used as the default. In a group of related track elements only one element may contain this attribute. |
+| `kind` | This sets the type of label for the track element. |
+| `label` | visible text label for the title of the track |
+| `src` | This is used to specify the URL to the WebVTT file to be included. |
+| `srclang` | This lets you specify the language of the embedded subtitles. |
+
+
+### HTML attributes for `<video>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `autoplay` | The video file is played automatically when the web page has finished loading. has been loaded. |
+| `controls` | Displays a bar with control functions such as play, pause, etc., with which the user can control the video file. |
+| `height` | With this you specify the height of the video to be displayed. |
+| `loop` | When the video file has finished playing, it will be played again with this attribute. |
+| `muted` | The sound of the video file is muted with this attribute. |
+| `poster` | This allows you to specify a URL to an image that will be displayed, as long as or when the video is not available (for example, if it has not yet been has not been loaded). |
+| `preload` | This allows you to specify how the video file should be preloaded when the web page is loaded. `preload="auto"`: (default) The web browser should load the complete video file when the page is loaded; `preload="metadata"`: Only the metadata should be loaded when the page is loaded; `preload="none"`: The web browser should not load the video file at all at all when the page is loaded. |
+| `src` | This specifies the location (URL) of the video file. |
+| `width` | This sets the width of the video to be displayed. |
+
+
+## HTML elements for links
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<a>...</a>` | This element is used to mark and create the hyperlinks (also called references) to other web pages and anchors are marked and created. |
+| `<link>` | This allows you to create a logical relationship of the current document to another document. to another document. The element is placed in the header data of the head element. Even though the element creates a kind of hyperlink, it cannot be used to create clickable hyperlinks. For that you have the a element. |
+| `<nav>...</nav>` | The element is actually more of a section element, but since this element is also recommended to be used for navigation bars and menus for an unsorted list of links to other pages. I have included it here. |
+
+
+### HTML attributes for `<a>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `download` | With this attribute standing alone, the link specified in the href attribute is offered for download. |
+| `href` | This specifies the URL or document where the link goes when the user clicks on the link text or even the graphic between `<a>` and `</a>`. |
+| `hreflang` | This allows you to specify the language of the target reference from the href attribute in the form of an IANA (Internet Assigned Numbers Authority) language abbreviation. |
+| `media` | With this you set the media type of the link target. |
+| `rel` | Describes the relationship between the current document and the link target you specified with the href attribute |
+| `target` | This sets the target window of the calling hyperlink that you specified with the with the href attribute. |
+| `type` | This allows you to specify the MIME type of the linked resource that you specified with the href attribute. |
+
+
+### HTML attributes for `<link>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `href` | Use this to specify the target URL to another document that should be related to the current document. |
+| `hreflang` | This allows you to specify the language of the target reference from the href attribute in the form of an IANA language abbreviation. |
+| `media` | This allows you to specify which media type the target URL in the href attribute uses. |
+| `rel` | Describes the relationship between the current document and the link target you specified with the href attribute |
+| `sizes` | This allows you to set the sizes for icons, which can be used e.g. with favicons can be used. Multiple values can also be specified here. |
+| `type` | Allows you to specify the MIME type for the resource to be included. |
+
+
+## HTML elements for lists
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<ul>...</ul>` | Use this element to indicate an unsorted enumerated list where the order of the list items is not so important. The individual elements of the list items are added with the li element element between the ul element. The bullet is usually usually displayed as a bullet, but this can be changed with CSS. |
+| `<ol>...</ol>` | Use this element to indicate an ordered enumerated list, where the order of the list elements is important. The individual entries of the (mostly) numbered list are also noted here with the li element between the ol element. |
+| `<li>...</li>` | With a li element you note the individual list items (or list items) of ordered ol and unordered ul lists. Each li element is a list entry. |
+| `<dl>...</dl>` | With this you describe a description list (formerly definition list). Between the dl element you note the expression to be described in the dt element. expression to be described in the dt element, and the explanation of this expression with the dd element. |
+| `<dt>...</dt>` | With this you draw the expression to be explained, which you have noted between the dl element. The description of this expression written in the dt element is written immediately afterwards with the the dd element. |
+| `<dd>...</dd>` | The dd element is used for the description of the expression to be explained, which you have marked with a dt element just before. |
+
+
+### HTML attributes for `<ol>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `reversed` | With this stand alone attribute you invert the numbering which orders the numbering downward (5, 4, 3 ...) instead of upward (1, 2, 3 ...). |
+| `start` | This allows you to specify the integer starting value for an ordered ol list for the first li element. |
+| `type` | This allows you to specify the type (numbers or letters) of the enumeration. |
+
+
+### HTML attributes for `<li>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `value` | Sets an integer value for a list item. All subsequent list items are incremented by the value 1. This attribute makes only makes sense for ordered lists with the ol element. |
+
+
+## HTML elements for tables
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<table>...</table>` | With this element you define an HTML table. Such an HTML table contains many other child elements that you use to define the table's structure of the table (for example, rows and columns). |
+| `<caption>...</caption>` | This element allows you to add a caption to the table. The caption element must be placed immediately after the opening `<table>` caption. Also, only one caption can be used per table can be used. By default, the caption is displayed above the table, but with the CSS property `caption-side` and `text-align` you can change this alignment. |
+| `<colgroup>`,`<col>` | Use the colgroup element to specify a group of one column in a a table for formatting. This is very useful when you want to apply stylesheets to an entire column, because you do not have to you don't have to repeat the stylesheet for each cell in the same column. With the col element, on the other hand, you specify the column properties for each column in a colgroup element. The col element must be be used inside the colgroup element if the colgroup element does not use a span attribute. |
+| `<tbody>...</tbody>` | You can use the element to mark up the main content or body of an HTML table. The element is still often used in in conjunction with the thead and/or tfoot element to divide a table divide a table into multiple sections. Many web browsers also often automatically fill in a missing tbody element when you you view an HTML table without the tbody element using a DOM inspector. |
+| `<td>`,`<th>` | Use these elements to draw a single table cell in a table. You use the td element for an ordinary table cell for data, while the th element is used as a table header cell. |
+| `<tfoot>...</tfoot>` | You can use the element to mark the table footer or the end of an of an HTML table. The element is often used in conjunction with the tbody and/or thead element to divide a table into multiple sections. |
+| `<thead>...</thead>` | You can use the element to mark up the table header or the beginning of an HTML table. The element is often used in tbody and/or tfoot element to split a table into multiple sections. still divide a table into multiple sections. |
+| `<tr>...</tr>` | With this you will draw a new table row. In between you will note the individual table cells (or columns) with the th and td elements. |
+
+
+### HTML attributes for `<table>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `sortable` | When you use this standalone attribute, you specify, that the data of the table can be sorted. |
+
+
+### HTML attribute for `<col>` and `<colgroup>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `span` | This allows you to specify how many columns are covered by a group of of table columns (colgroup) or a single table column (col) in the table. should span in the table. |
+
+
+### HTML attributes for `<td>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `colspan` | This allows you to specify over how many columns this table cell should span. |
+| `headers` | This allows you to specify the ID(s) of the table header cell(s) that are related to or associated with the table cell content. This has no visual effect on the text content of the th element, but this text can be used by screen readers |
+| `rowspan` | This allows you to specify over how many rows this table cell should span. |
+
+
+### HTML attributes for `<th>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `abbr` | This allows you to specify an alternate or shorter text label for the table header cell. This has no visual effect on the the text content of the th element, but this text can be used by screen readers. |
+| `colspan` | This allows you to specify over how many columns this table cell should span. |
+| `headers` | This allows you to specify the ID(s) of the table header cell(s) that are related to or associated with the contents of other table header cells. This has no visual effect on the text content of the th element, but this text can be used by screen readers. |
+| `rowspan` | This allows you to specify over how many rows this table cell should extend |
+| `scope` | With this attribute you specify whether a table header cell is a column (col), a row (row), a group of columns (colgroup) or a group of rows (rowgroup). However, this attribute has no effect on the visual display in the web browser, but can be used by but can be used by screen readers. |
+| `sorted` | This sets the order of sorting for a column. |
+
+
+## HTML elements for meta information
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<head>...</head>` | This is the non-displayable header area of an HTML document and contains other elements with important information and resources for the displayable HTML document. |
+| `<meta>...</meta>` | With this element you provide additional information to facilitate the management and processing of the file content. The meta elements must be noted within the head element. |
+| `<base>...</base>` | This stand-alone base element allows you to note the base URL for relative references in an HTML document. Only a maximum of one base element may be used, and it must be written inside the head element. |
+
+
+### HTML attributes for `<meta>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `charset` | This specifies the character encoding used for the document. the document. The most common value is probably charset="utf-8" or maybe charset="iso-8859-1". |
+| `content` | Here you specify the value of a meta specification. This value is usually associated with the http-equiv or name attribute. |
+| `http-equiv` | This allows you to give HTTP instructions in meta specifications. You usually note the value of this HTTP statement in the content attribute. |
+| `name` | This is used to specify a name for meta information. Usually you use a name-value pair together with the content attribute. |
+
+
+### HTML attributes for `<base>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `href` | This specifies the base URL for all relative links in the HTML document. |
+| `target` | This defines the default window in which these reference targets should be displayed. Possible values for this are: `_self`: (default) output in the same window; `_blank`: output in a new window or tab; `_top`: Output in the body of the window; `_parent`: output in the calling window; |
+
+
+## HTML elements for adding other content
+| Element            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `<script>...</script>` | This element allows you to define one or more client-side script areas (such as JavaScript) in the HTML document. You can use this script element in both the head and body elements of the HTML document. If you include an external script with the src attribute, the script element remains empty. |
+| `<noscript>...</noscript>` | You can use this element to provide an alternative content or hint if a web browser does not support JavaScript or another scripting language (or is disabled). |
+| `<embed>` | This standalone element provides a kind of container for external applications, media, or interactive content not natively supported by the not natively supported by the web browser. |
+| `<object>...</object>` | You can also use this element to include active elements that are not natively supported by the web browser into the HTML document. in the HTML document. However, unlike the embed element, you can a fallback solution inside the object element because, unlike the element, is not a stand-alone element. Often, the param element is also used inside the object element is often used to pass various parameters to the plug-in of the of the resource to be embedded. The object element can also be used to simply insert another web page into the HTML document. |
+| `<param>` | This standalone element is usually used in conjunction with the object element to specify various parameters for a plug-in as well. |
+
+
+### HTML attributes for `<script>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `async` | If you use this Boolean attribute, the script is executed asynchronously, that is, script execution starts immediately, not after the HTML document is fully loaded. This attribute makes sense only if you have included an external script with the src attribute. |
+| `charset` | This allows you to specify a character encoding for an external script specified with the src attribute specified external script. |
+| `defer` | If you note this standalone attribute, the external script specified with the src attribute will be executed when the page is loaded |
+| `src` | This specifies the URL to an external script file. |
+| `type` | This specifies the MIME type of the script. Since this value is `"text/javascript"` since HTML5, you no longer need to use this attribute if you use JavaScript as the scripting language. |
+
+
+### HTML attributes for `<embed>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `height` | Sets the height for the content to be embedded. |
+| `src` | URL Specifies the URL to the external file to embed. |
+| `type` | Specifies the media type of the file to embed |
+| `width` | Sets the width for the content to be embedded. |
+
+
+### HTML attributes for `<object>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `data` | This specifies the URL to the external file to be embedded. |
+| `form` | This specifies which form the embedded object is linked to. The value must be the id attribute of a form element. |
+| `height` | Specifies the height of the embedded object. |
+| `name` | This allows you to specify a name for the object. |
+| `type` | Use this to specify the media type of the object to be embedded. |
+| `usemap` | Name of a map element to control a reference-sensitive graphic. |
+| `width` | Lets you specify the width of the object to embed. |
+
+
+### HTML attributes for `<param>`
+| Attribute          | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `name` | Here you specify the name of the parameter for the plug-in. |
+| `value` | Here you specify the value of the parameter for the plug-in. |
