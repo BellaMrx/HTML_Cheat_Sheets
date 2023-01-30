@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>HTML Cheat Sheets</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Cheat Sheets</h1>
+        <a href="https://twitter.com/bella_mrx" class="fa fa-twitter"><span class="link">@bella_mrx</span></a>
+        <a href="https://github.com/BellaMrx" class="fa fa-github"><span class="link">BellaMrx</span></a>
+    </header>
+    <h2>HTML Basic Elements</h2>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&lt;!-- ... --&gt;</td>
+            <td>&lt;!-- --&gt; is strictly speaking not an HTML element. You can use it to add a comment. Text written between &lt;!-- and --&gt; is not displayed in the web browser. For example: &lt;!-- I am comment --&gt;</td>
+          </tr>
+          <tr>
+            <td>&lt;!DOCTYPE&gt;</td>
+            <td>Defines the document type used, which is always &lt;!DOCTYPE html&gt;. is. The &lt;!DOCTYPE&gt; declaration is also not an HTML element, but rather a hint for the web browser about the HTML version in which the document was document was written.</td>
+          </tr>
+          <tr>
+            <td>&lt;body&gt;...&lt;/body&gt;</td>
+            <td>Defines the document body with the content area of the HTML document.</td>
+          </tr>
+          <tr>
+            <td>&lt;br&gt;</td>
+            <td>Inserts a forced line break at the noted position. The element has no end tag.</td>
+          </tr>
+          <tr>
+            <td>&lt;h1&gt;...&lt;/h1&gt; - &lt;h6&gt;...&lt;/h6&gt;</td>
+            <td>Defines a heading</td>
+          </tr>
+          <tr>
+            <td>&lt;hr&gt;</td>
+            <td>Defines a topic change in the HTML document, e.g. to separate two different thematic contents. The element has no end tag</td>
+          </tr>
+          <tr>
+            <td>&lt;html&gt;...&lt;/html&gt;</td>
+            <td>Defines the actual HTML document and is also the root element of the HTML document. The &lt;html&gt; tag is effectively the container for all other HTML elements.</td>
+          </tr>
+          <tr>
+            <td>&lt;p&gt;...&lt;/p&gt;</td>
+            <td>Defines a paragraph of text. The web browsers usually add space before and after a p element.</td>
+          </tr>
+          <tr>
+            <td>&lt;title&gt;...&lt;/title&gt;</td>
+            <td>Defines the title of an HTML document. This element is required by every HTML document to be valid HTML.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <br>
+    <h2>Global HTML attributes</h2>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>accesskey</td>
+            <td>A keyboard shortcut for accessing an element: &lt;a href="#" accesskey="h"&gt;...&lt;/a&gt;</td>
+          </tr>
+          <tr>
+            <td>class</td>
+            <td>Specifies a class name for the element, which is commonly used in practice usually used for stylesheets: &lt;h1 class="intro"&gt;Important&lt;/h1&gt;</td>
+          </tr>
+          <tr>
+            <td>contenteditable</td>
+            <td>With this you define whether the content of an element may be changed (true) or not (false): &lt;p contenteditable="true"&gt;...&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>contextmenu</td>
+            <td>A context menu appears when the user interacts with it, such as a for example, a right mouse click. With contextmenu you can to customize this menu. The value must be the id of a menu element.</td>
+          </tr>
+          <tr>
+            <td>data-*</td>
+            <td>The attribute can be used to embed user-defined data attributes in an HTML element, e.g. to query it with getAttribute(data-...) to retrieve it.</td>
+          </tr>
+          <tr>
+            <td>dir</td>
+            <td>Defines the running direction of texts for the content of the HTML Element. Possible values are ltr (left to right), rtl (right to left) or auto: &lt;p dir="rtl"&gt;Right to left&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>draggable</td>
+            <td>This allows you to specify whether a user can drag an HTML element with the mouse button pressed (true) or not (false): &lt;p draggable="true"&gt;Warpable&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>dropzone</td>
+            <td>This specifies whether a dragged element should be copied or linked when dropped on the element. element should be copied (copy), moved (moved) or linked (link). Currently this attribute is not yet supported by any web browser.</td>
+          </tr>
+          <tr>
+            <td>hidden</td>
+            <td>If you use the stand-alone attribute, the HTML element is no longer relevant and should no longer be displayed: &lt;p hidden&gt;Not visible!&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>With this you define a unique ID for an HTML element. This ID is very often used for CSS and JavaScript or to set a link to a specific HTML element on the same page.</td>
+          </tr>
+          <tr>
+            <td>lang</td>
+            <td>Defines the language of the HTML element's content: &lt;p lang="es"&gt; ¡Buenos días!&lt;/p&gt;</td>
+          </tr>
+          <tr>
+            <td>spellcheck</td>
+            <td>This determines whether you perform a spell check on the content of the HTML element (true) or not (false): &lt;textarea spellcheck="true"&gt;&lt;/textarea&gt;</td>
+          </tr>
+          <tr>
+            <td>style</td>
+            <td>This allows you to set an inline CSS for an HTML element: &lt;h1 style="color:red"&gt;red font&lt;/h1&gt;</td>
+          </tr>
+          <tr>
+            <td>tabindex</td>
+            <td>This sets the order of HTML elements when the user presses the user presses the tab key: &lt;a href="#" tabindex="1"&gt;Link 1&lt;/a&gt;</td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>This allows you to specify additional information for an HTML element which is displayed as a tooltip by many web browsers: &lt;a href="#" title="Weblink"&gt;Link&lt;/a&gt;</td>
+          </tr>
+          <tr>
+            <td>translate</td>
+            <td>Google Translate may be translated (yes) or not (no). Alternatively you can also specify class="notranslate" as fallback.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    </body>
+    </html>
