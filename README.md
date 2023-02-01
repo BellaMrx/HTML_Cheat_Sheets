@@ -29,7 +29,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `data-*` | The attribute can be used to embed user-defined data attributes in an HTML element, e.g. to query it with getAttribute(data-...) to retrieve it. |
 | `dir` | Defines the running direction of texts for the content of the HTML Element. Possible values are `ltr` (left to right), `rtl` (right to left) or auto: `<p dir="rtl">Right to left</p>` |
 | `draggable` | This allows you to specify whether a user can drag an HTML element with the mouse button pressed (true) or not (false): `<p draggable="true">Warpable</p>` |
-| `dropzone` | This specifies whether a dragged element should be copied or linked when dropped on the element. element should be copied (copy), moved (moved) or linked (link). Currently this attribute is not yet supported by any web browser. |
+| `dropzone` | This specifies whether a dragged element should be copied or linked when dropped on the element. element should be copied, moved or linked. Currently this attribute is not yet supported by any web browser. |
 | `hidden` | If you use the stand-alone attribute, the HTML element is no longer relevant and should no longer be displayed: `<p hidden>Not visible!</p>` |
 | `id` | With this you define a unique ID for an HTML element. This ID is very often used for CSS and JavaScript or to set a link to a specific HTML element on the same page. |
 | `lang` | Defines the language of the HTML element's content: `<p lang="es"> ¡Buenos días!</p>` |
@@ -72,11 +72,11 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 ## HTML elements for text markup
 | Element            | Description                                             |
 | ------------------ | ------------------------------------------------------- |
-| `<abbr>...</abbr>` | The element is used for abbreviations or acronyms. The title attribute is also often used for this element, where the meaning of the abbreviation is written out and displayed by the web browser as a tooltip when the user hovers over it. tooltip when the user hovers over it with the mouse: `<abbr title="value-added_tax">VAT.</abbr>` |
+| `<abbr>...</abbr>` | The element is used for abbreviations or acronyms. The title attribute is also often used for this element, where the meaning of the abbreviation is written out and displayed by the web browser as a tooltip when the user hovers over it: `<abbr title="value-added_tax">VAT.</abbr>` |
 | `<address>...</address>` | This element should be used to note the contact information of the author or owner of a page or article. |
 | `<b>...</b>` | With this element you can mark up a text that is to stand out from the from the usual continuous text. Usually, this text is displayed in bold. However, the b element should not be misused for formatting purposes, for which you should use CSS instead. However, you should use the b element only if no more suitable HTML element is appropriate for this text. For highlighting you should use `<em>`, for an important text `<strong>` and to mark up text `<mark>` should be preferred. |
 | `<bdi>...</bdi>` | This defines an area for a bidirectional text that could be formatted in a different could be formatted in a different direction. This element is useful when a text is taken from a database or from a user input where the writing direction is not known. |
-| `<bdo>...</bdo>` | This element is used to change the text direction within a continuous text. continuous text. This is very useful, for example, when you want to display a text that is written from right to left (such as Hebrew or Arabic) |
+| `<bdo>...</bdo>` | This element is used to change the text direction within a continuous text. This is very useful, for example, when you want to display a text that is written from right to left (such as Hebrew or Arabic) |
 | `<blockquote>...</blockquote>` | With this you usually quote a text from another source.  |
 | `<cite>...</cite>` | This element should be used since HTML5 to mark up a title of books, movies, music, exhibitions, paintings, etc. This element should not be used for people.  |
 | `<code>...</code>` | Within a continuous text you use this element to draw the text as computer code. If you want to mark up multiple lines as computer code you should use the pre element. |
@@ -88,7 +88,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `<kbd>...</kbd>` | This element should be used to mark a letter, a word or a word or passage in the continuous text as a keyboard input. |
 | `<mark>...</mark>` | This element should be used to mark words or passages in a continuous text as marked text. In practice, you could use `<mark>`, for example, to highlight a search term you have found. |
 | `<pre>...</pre>` | This is used to mark up preformatted text. All whitespace characters are displayed in the web browser as they appear in the text. Usually, this text is also output in a monospace font. |
-| `<q>...</q>` | Identify individual words or text passages as quoted or spoken text. text. The web browser then usually places this text between quotation marks. |
+| `<q>...</q>` | Identify individual words or text passages as quoted or spoken text. The web browser then usually places this text between quotation marks. |
 | `<ruby>`,`<rt>`,`<rp>` | Enclosing content for Ruby annotations to indicate the pronunciation of East Asian characters. |
 | `<s>...</s>` | Mark a text as no longer valid or obsolete. For replaced or deleted text, you should use the del element instead. |
 | `<samp>...</samp>` | You should use the element for an exemplary screen output of programs. |
@@ -99,7 +99,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `<time>...</time>` | The element is used to mark up date and time information so that this information is also readable and thus usable by search engines, for example. |
 | `<u>...</u>` | This allows you to underline text as proper noun underlining, such as is common in Chinese writing, or incorrect words. The text is usually underlined by the web browser. |
 | `<var>...</var>` | This allows you to mark up a text as a variable or constant that is used, for example, in a mathematical expression or with an identifier of a variable in a programming language. |
-| `<wbr>...</wbr>` | This defines an optional line break within a word. word. The line break only occurs at this point if it is necessary for optimal display in the web browser, so that the reader does not have to reader does not have to scroll to the right. |
+| `<wbr>...</wbr>` | This defines an optional line break within a word. The line break only occurs at this point if it is necessary for optimal display in the web browser, so that the reader does not have to reader does not have to scroll to the right. |
 
 
 ### HTML attribute for `<bdo>`
@@ -111,7 +111,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 ### HTML attribute for `<blockquote>` and `<q>`
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
-| `cite` | This allows you to specify the URL to the source from which the citation originated. comes from. For books, you can also include a link to the corresponding book page or to a web store where the book can be purchased. can be purchased. |
+| `cite` | This allows you to specify the URL to the source from which the citation originated. For books, you can also include a link to the corresponding book page or to a web store where the book can be purchased. |
 
 
 ### HTML attributes for `<del>` and `<ins>`
@@ -141,7 +141,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `<optgroup>...</optgroup>` | This allows you to define suboptions grouped in an extensive select selection list. |
 | `<option>...</option>` | This is used to define the individual entries of a select selection list, from which the user can choose. |
 | `<output>...</output>` | The output element specifies an output area for the result of calculations. This makes the output element the counterpart of the input element, so to speak. |
-| `<progress>...</progress>` | This allows you to visualize a progress bar or a history for a task task such as a questionnaire or a download. For a dynamic progress indicator, you need a scripting language such as JavaScript. |
+| `<progress>...</progress>` | This allows you to visualize a progress bar or a history for a task such as a questionnaire or a download. For a dynamic progress indicator, you need a scripting language such as JavaScript. |
 | `<select>...</select>` | This allows you to define a selection list with fixed entries in a form from which the user can select an entry. An entry in the list, on the other hand, you define within the select element with the option element. |
 | `<textarea>...</textarea>` | Use this element to create a multiline text input field. |
 
@@ -152,10 +152,10 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `accept-charset` | This is used to specify the character set for the form data. Common values are UTF-8 for Unicode or ISO-8859-1 for Latin. In theory, however, you can use any character set. However, no web browser can handle all character sets. Therefore, to be on the safe side always use a widely used character set (such as UTF-8). |
 | `action` | With this you specify the URL or path to a file that is called with a submit button when submitting. Often, this is a (PHP) script that evaluates the entered form data evaluates. |
 | `autocomplete` | This allows you to enable autocompletion with the value `on` (= default value) and disable it with the value `off`. |
-| `enctype` | Defines how the data should be encoded when sent to the server. server. Only needed if `method="post"`. |
+| `enctype` | Defines how the data should be encoded when sent to the server. Only needed if `method="post"`. |
 | `method` | Specifies the HTTP method how the data should be transferred. With the default value get the data is sent with the URL and with `post` in the HTTP body. |
 | `name` | Sets a name for the form. The name is often used when evaluating other scripts. |
-| `novalidate` | This is a standalone attribute that allows you to skip validating form elements when the form is submitted. is submitted. |
+| `novalidate` | This is a standalone attribute that allows you to skip validating form elements when the form is submitted. |
 | `target` | This sets the target window of the calling content. Possible values for this are:  `_self` , `_blank`, `_top`, `_parent` |
 
 
@@ -166,13 +166,13 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `alt` | An alternative text if the graphic cannot be displayed. This attribute only makes sense in connection with graphical controls like `type="image"` |
 | `autocomplete` | This allows you to enable autocompletion with the value `on` (= default value) and disable it with the value `off`. |
 | `autofocus` | As soon as the web page is loaded, the input field gets the focus, and data can be entered. The attribute is a stand-alone attribute. Correctly, only one element in a form should contain this attribute. |
-| `checked` | This allows you to pre-select a checkbox (`type="checkbox"`) or a radio button (`type="radio"`) when the page is loaded is loaded. |
+| `checked` | This allows you to pre-select a checkbox (`type="checkbox"`) or a radio button (`type="radio"`) when the page is loaded. |
 | `disabled` | This stand-alone attribute allows you to disable an input field so that it cannot be selected and is grayed out. |
-| `form` | With this you determine with which form an input field is linked. is linked to. The value must be the id attribute of a form element. With attribute it is possible to note an input field outside the form element. |
+| `form` | With this you determine with which form an input field is linked. The value must be the id attribute of a form element. With attribute it is possible to note an input field outside the form element. |
 | `formaction` | Here you specify the URL or path to be called when submitting an input. This attribute overrides the actionAttribute of the form element and only makes sense in conjunction with `type="submit"` and `type="image"`. |
-| `formenctype` | Defines how the data should be encoded when sent to the server. server. Only needed if `method="post"`. This attribute overrides the enctype attribute of the form element and only makes sense with `type="submit"` and `type="image"`. |
+| `formenctype` | Defines how the data should be encoded when sent to the server. Only needed if `method="post"`. This attribute overrides the enctype attribute of the form element and only makes sense with `type="submit"` and `type="image"`. |
 | `formmethod` | Specifies the HTTP method how the data should be transferred. With the default value get the data is sent with the URL and with post in the HTTP body. This attribute overrides the method attribute of the form element and only makes sense with `type="submit"` and `type="image"`. |
-| `formnovalidate` | This is a standalone attribute that allows you to skip validating form elements when the form is submitted. This attribute overrides the novalidate attribute of the form Element and only makes sense with `type="submit"` and `type="image"`. |
+| `formnovalidate` | This is a standalone attribute that allows you to skip validating form elements when the form is submitted. This attribute overrides the novalidate attribute of the form element and only makes sense with `type="submit"` and `type="image"`. |
 | `formtarget` | This sets the target window of the calling content. This attribute overrides the target attribute of the form element and makes only makes sense with `type="submit"` and `type="image"`. |
 | `height` | Defines the height of an input element. Makes sense only with `type= "image"`. |
 | `list` | As value you pass the id attribute of a datalist element with predefined options for auto-completion. |
@@ -181,13 +181,13 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `multiple` | With the boolean attribute you can allow the user, to enter more than one value. This attribute works with `type="file"` and `type="email"`. |
 | `name` | Sets a name for the input element. The name is often used when evaluating other scripts. |
 | `pattern` | This allows you to define a regular expression as a search pattern, which must match the contents of the input field. |
-| `placeholder` | This allows you to define a simple text as a placeholder, which is displayed as long as the input field is empty. It makes sense that this is a hint or help with regard to what the user should the user should enter here (e.g. your e-mail address in the case of an text input field for an e-mail). |
-| `readonly` | When you use this standalone attribute, it is not possible to modify the input element is not possible. The input field is read only |
+| `placeholder` | This allows you to define a simple text as a placeholder, which is displayed as long as the input field is empty. It makes sense that this is a hint or help with regard to what the user should enter here (e.g. your e-mail address in the case of an text input field for an e-mail). |
+| `readonly` | When you use this standalone attribute, it is not possible to modify the input element is not possible. The input field is read only. |
 | `required` | With this standalone attribute you specify that this input field has to be must be filled in before it can be submitted. This attribute can be used for the following input elements: `type="text"`, `type="search"`, `type="url"`, `type="tel"`, `type="email"`, `type= "password"`, `type="date"`, `type="number"`, `type="checkbox"`, `type= "radio"` and `type="file"`. |
 | `size` | This sets the visible width of the visible input element in characters. This attribute can be used with the following input elements: `type="text"`, `type="search"`, `type="tel"`, `type="url"`, `type="email"` and `type="password"`. |
 | `src` | This sets the URL to a graphic for a button of type `type="image"`. |
 | `step` | This is used to specify the value of the increment (interval) with which the control field can be changed. This attribute can be used with the following input elements: `type="number"`, `type="range"`, `type= "date"`, `type="datetime"`, `type="datetime-local"`, `type="month"`, `type= "time"` and `type="week"`. |
-| `type` | This sets the type of the input field. Since HTML5 many new many new types have been added here.  |
+| `type` | This sets the type of the input field. Since HTML5 many new types have been added here.  |
 | `value` | With this you set the value of an input element. Depending on the type of the input field, this value is used differently. |
 | `width` | Defines the width for the input element. This value only makes sense in conjunction with `type="image"`. |
 
@@ -224,14 +224,14 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
 | `autofocus` | Once the web page is loaded, the textarea element gets the focus, and data can be entered. |
-| `cols` | Specifies the width of the text box. This is the number of characters that can be can be entered per line in a multiline text input field. can be entered. |
+| `cols` | Specifies the width of the text box. This is the number of characters that can be entered per line in a multiline text input field. |
 | `disabled` | With this attribute standing alone you can deactivate the text field. |
 | `form` | This specifies which form the text field is linked to. The value must be the id attribute of a form element. With this attribute it is possible to note a textarea field outside the form element. |
-| `maxlength` | This allows you to set the maximum number of characters that can be entered into the multiline text input field. the multiline text input field. |
+| `maxlength` | This allows you to set the maximum number of characters that can be entered into the multiline text input field. |
 | `name` | Sets a name for the textarea element. The name is often used when evaluating other scripts. |
-| `placeholder` | This allows you to define a simple text as a placeholder, which is displayed as long as the input field is empty. is displayed as long as the input field is empty. It makes sense that this is a hint or help with regard to what the user should enter here. the user should enter here. |
-| `readonly` | If you use this stand-alone attribute, it is not possible to change the text field. of the text field is not possible. The input field will be read-only. |
-| `required` | With this single attribute you specify that this text field must be filled in before the form can be submitted. must be filled in before the form can be submitted. |
+| `placeholder` | This allows you to define a simple text as a placeholder, which is displayed as long as the input field is empty. It makes sense that this is a hint or help with regard to what the user should enter here. |
+| `readonly` | If you use this stand-alone attribute, it is not possible to change the text field. The input field will be read-only. |
+| `required` | With this single attribute you specify that this text field must be filled in before the form can be submitted. |
 | `rows` | This specifies the number of visible lines in the multiline input field. |
 | `wrap` | This lets you specify how line breaks in the multiline text field are to be should be handled when you submit the form. With the default value `wrap="soft"` no additional line breaks will be added (only the ones you manually inserted yourself). With the second possible value `wrap="hard"` will add all the line breaks made by cols will be added. In this case, of course the cols attribute must also be defined with a value. |
 
@@ -243,9 +243,9 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `disabled` | With this attribute standing alone you can deactivate the button. |
 | `form` | This specifies which form the button is linked to. The value must be the id attribute of a form element. With this attribute it is possible to note a button outside the form element. |
 | `formaction` | Here you specify the URL or path to a server program, to be called when the form is submitted. This attribute overrides the action attribute of the form element. |
-| `formenctype` | Defines how the data should be encoded when sent to the server. server. Required only if `method="post"`. This attribute overrides the enctype attribute of the form element |
+| `formenctype` | Defines how the data should be encoded when sent to the server. Required only if `method="post"`. This attribute overrides the enctype attribute of the form element. |
 | `formmethod` | Specifies the HTTP method how the data should be transferred. With the default value get, the data is sent with the URL and with post in the HTTP body. This attribute overrides the method attribute of the form element. |
-| `formnovalidate` | This is a standalone attribute that allows you to skip validating form elements when the form is submitted. is submitted. This attribute overrides the novalidate attribute of the form element. |
+| `formnovalidate` | This is a standalone attribute that allows you to skip validating form elements when the form is submitted. This attribute overrides the novalidate attribute of the form element. |
 | `formtarget` | This sets the target window of the calling content. This attribute overrides the target attribute of the form element. |
 | `name` | Sets a name for the button element. The name is often used when evaluating other scripts. |
 | `type` | Sets the type of the button. Possible values are: `type="button"`, `type="reset"`, `type="submit"` |
@@ -267,7 +267,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 ### HTML attributes for `<meter>`
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
-| `form` | This specifies which form the state indicator is linked to. The value must be the id attribute of a form element. element. With this attribute it is possible to note a state indicator outside of the form element. |
+| `form` | This specifies which form the state indicator is linked to. The value must be the id attribute of a form element. With this attribute it is possible to note a state indicator outside of the form element. |
 | `high` | This sets a lower limit to the upper range of the scale. If this attribute is missing, `high` is initialized with the value of `max`. |
 | `low` | This sets an upper limit to the lower range of the scale. If this value is missing, `low` is initialized with the value of `min`. |
 | `max` | This sets the maximum value of the scale. If you do not use this attribute, `max="1"` will be used. |
@@ -359,7 +359,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | ------------------ | ------------------------------------------------------- |
 | `alt` | Allows you to specify an alternative text that will be displayed when the if the link-sensitive graphic is not displayed. For valid valid HTML, this attribute must also be used with any area element when the href attribute is used. |
 | `coords` | Here you specify the coordinates for the reference sensitive area. These are absolute values that you must separate with commas. |
-| `download` | You use this to specify a URL or pathname to a file that can be can be downloaded when the user clicks the link. |
+| `download` | You use this to specify a URL or path name to a file that can be can be downloaded when the user clicks the link. |
 | `href` | Here you specify the link for the reference target of the link-sensitive area that will be called when the user clicks on it. If attribute is not used, this area element is not a hyperlink. |
 | `hreflang` | This specifies the language of the reference target of the reference-sensitive area. |
 | `media` | This allows you to specify the media type of the link or a resource. |
@@ -380,7 +380,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
 | `alt` | Allows you to specify an alternative text that will be displayed if the image could not be loaded. This attribute is required for valid HTML. |
-| `height` | With this you specify the height of the image source.n. |
+| `height` | With this you specify the height of the image source. |
 | `ismap` | This allows you to declare the image source as a reference-sensitive graphic with a server-side evaluation. |
 | `src` | This specifies the URL to the image source you want to reference. The specification can be absolute or relative. Besides the alt attribute this attribute is required for valid HTML. |
 | `usemap` | Use this to mark the image source as a reference-sensitive graphic. The value is a URI that leads to a place where the corresponding map element is noted. Since this map element is usually in the same file, this value is specified with a leading gate character and the name of the anchor (`usemap="#anchor"`). |
@@ -397,7 +397,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
 | `media` | This allows you to use media queries to create breakpoints for the images you want to load. |
-| `srcset` | With this you specify a comma-separated list with the image sources image sources. For each specified image source you can also specify the width and pixel density (default value: 1x). |
+| `srcset` | With this you specify a comma-separated list with the image sources. For each specified image source you can also specify the width and pixel density (default value: 1x). |
 | `src` | This is used to specify the URL to an image source. |
 | `size` | a comma-separated list with a media characteristic and the size specification |
 | `type` | This sets the MIME type for the image resource. |
@@ -444,7 +444,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 ### HTML attributes for `<video>`
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
-| `autoplay` | The video file is played automatically when the web page has finished loading. has been loaded. |
+| `autoplay` | The video file is played automatically when the web page has finished loading. |
 | `controls` | Displays a bar with control functions such as play, pause, etc., with which the user can control the video file. |
 | `height` | With this you specify the height of the video to be displayed. |
 | `loop` | When the video file has finished playing, it will be played again with this attribute. |
@@ -459,8 +459,8 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | Element            | Description                                             |
 | ------------------ | ------------------------------------------------------- |
 | `<a>...</a>` | This element is used to mark and create the hyperlinks (also called references) to other web pages and anchors are marked and created. |
-| `<link>` | This allows you to create a logical relationship of the current document to another document. to another document. The element is placed in the header data of the head element. Even though the element creates a kind of hyperlink, it cannot be used to create clickable hyperlinks. For that you have the a element. |
-| `<nav>...</nav>` | The element is actually more of a section element, but since this element is also recommended to be used for navigation bars and menus for an unsorted list of links to other pages. I have included it here. |
+| `<link>` | This allows you to create a logical relationship of the current document to another document. The element is placed in the header data of the head element. Even though the element creates a kind of hyperlink, it cannot be used to create clickable hyperlinks. For that you have the a element. |
+| `<nav>...</nav>` | The element is actually more of a section element, but since this element is also recommended to be used for navigation bars and menus for an unsorted list of links to other pages. |
 
 
 ### HTML attributes for `<a>`
@@ -489,10 +489,10 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 ## HTML elements for lists
 | Element            | Description                                             |
 | ------------------ | ------------------------------------------------------- |
-| `<ul>...</ul>` | Use this element to indicate an unsorted enumerated list where the order of the list items is not so important. The individual elements of the list items are added with the li element element between the ul element. The bullet is usually usually displayed as a bullet, but this can be changed with CSS. |
+| `<ul>...</ul>` | Use this element to indicate an unsorted enumerated list where the order of the list items is not so important. The individual elements of the list items are added with the li element between the ul element. The bullet is usually displayed as a bullet, but this can be changed with CSS. |
 | `<ol>...</ol>` | Use this element to indicate an ordered enumerated list, where the order of the list elements is important. The individual entries of the (mostly) numbered list are also noted here with the li element between the ol element. |
 | `<li>...</li>` | With a li element you note the individual list items (or list items) of ordered ol and unordered ul lists. Each li element is a list entry. |
-| `<dl>...</dl>` | With this you describe a description list (formerly definition list). Between the dl element you note the expression to be described in the dt element. expression to be described in the dt element, and the explanation of this expression with the dd element. |
+| `<dl>...</dl>` | With this you describe a description list (formerly definition list). Between the dl element you note the expression to be described in the dt element. Expression to be described in the dt element, and the explanation of this expression with the dd element. |
 | `<dt>...</dt>` | With this you draw the expression to be explained, which you have noted between the dl element. The description of this expression written in the dt element is written immediately afterwards with the the dd element. |
 | `<dd>...</dd>` | The dd element is used for the description of the expression to be explained, which you have marked with a dt element just before. |
 
@@ -520,7 +520,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `<tbody>...</tbody>` | You can use the element to mark up the main content or body of an HTML table. The element is still often used in in conjunction with the thead and/or tfoot element to divide a table divide a table into multiple sections. Many web browsers also often automatically fill in a missing tbody element when you you view an HTML table without the tbody element using a DOM inspector. |
 | `<td>`,`<th>` | Use these elements to draw a single table cell in a table. You use the td element for an ordinary table cell for data, while the th element is used as a table header cell. |
 | `<tfoot>...</tfoot>` | You can use the element to mark the table footer or the end of an of an HTML table. The element is often used in conjunction with the tbody and/or thead element to divide a table into multiple sections. |
-| `<thead>...</thead>` | You can use the element to mark up the table header or the beginning of an HTML table. The element is often used in tbody and/or tfoot element to split a table into multiple sections. still divide a table into multiple sections. |
+| `<thead>...</thead>` | You can use the element to mark up the table header or the beginning of an HTML table. The element is often used in tbody and/or tfoot element to split a table into multiple sections. Still divide a table into multiple sections. |
 | `<tr>...</tr>` | With this you will draw a new table row. In between you will note the individual table cells (or columns) with the th and td elements. |
 
 
@@ -533,7 +533,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 ### HTML attribute for `<col>` and `<colgroup>`
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
-| `span` | This allows you to specify how many columns are covered by a group of of table columns (colgroup) or a single table column (col) in the table. should span in the table. |
+| `span` | This allows you to specify how many columns are covered by a group of of table columns (colgroup) or a single table column (col) in the table. Should span in the table. |
 
 
 ### HTML attributes for `<td>`
@@ -566,7 +566,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 ### HTML attributes for `<meta>`
 | Attribute          | Description                                             |
 | ------------------ | ------------------------------------------------------- |
-| `charset` | This specifies the character encoding used for the document. the document. The most common value is probably charset="utf-8" or maybe charset="iso-8859-1". |
+| `charset` | This specifies the character encoding used for the document. The most common value is probably charset="utf-8" or maybe charset="iso-8859-1". |
 | `content` | Here you specify the value of a meta specification. This value is usually associated with the http-equiv or name attribute. |
 | `http-equiv` | This allows you to give HTTP instructions in meta specifications. You usually note the value of this HTTP statement in the content attribute. |
 | `name` | This is used to specify a name for meta information. Usually you use a name-value pair together with the content attribute. |
@@ -585,7 +585,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `<script>...</script>` | This element allows you to define one or more client-side script areas (such as JavaScript) in the HTML document. You can use this script element in both the head and body elements of the HTML document. If you include an external script with the src attribute, the script element remains empty. |
 | `<noscript>...</noscript>` | You can use this element to provide an alternative content or hint if a web browser does not support JavaScript or another scripting language (or is disabled). |
 | `<embed>` | This standalone element provides a kind of container for external applications, media, or interactive content not natively supported by the not natively supported by the web browser. |
-| `<object>...</object>` | You can also use this element to include active elements that are not natively supported by the web browser into the HTML document. in the HTML document. However, unlike the embed element, you can a fallback solution inside the object element because, unlike the element, is not a stand-alone element. Often, the param element is also used inside the object element is often used to pass various parameters to the plug-in of the of the resource to be embedded. The object element can also be used to simply insert another web page into the HTML document. |
+| `<object>...</object>` | You can also use this element to include active elements that are not natively supported by the web browser into the HTML document. However, unlike the embed element, you can a fallback solution inside the object element because, unlike the element, is not a stand-alone element. Often, the param element is also used inside the object element is often used to pass various parameters to the plug-in of the of the resource to be embedded. The object element can also be used to simply insert another web page into the HTML document. |
 | `<param>` | This standalone element is usually used in conjunction with the object element to specify various parameters for a plug-in as well. |
 
 
