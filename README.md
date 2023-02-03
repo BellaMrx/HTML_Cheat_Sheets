@@ -653,7 +653,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | ----------------- | ------------------------------------------------------- |
 | `onblur` 			| ... when the element loses focus. |
 | `onchange` 		| ... when the value of the element has changed. |
-| `oncontextmenu` 	| ... if the context menu was executed with a right mouse click. was executed. However, this only works in conjunction with the contextmenu attribute. |
+| `oncontextmenu` 	| ... if the context menu was executed with a right mouse click. However, this only works in conjunction with the contextmenu attribute. |
 | `onfocus` 		| ... when an element receives the focus. |
 | `oninput` 		| ... when the content is changed by a user input. This is e.g. the case when the user is typing something into a single-line input field. For this reason this attribute only makes sense with the input elements of type password, search and text. But also the textarea element reacts to this. |
 | `oninvalid` 		| ... if an invalid entry was made. |
@@ -724,7 +724,7 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `onsuspend` 		| ... if the web browser wants to fetch the media file, but the process was stopped before the file was finished loading. |
 | `ontimeupdate` 	| ... if the playback position in the timeline has been changed. |
 | `onvolumechange` 	| ... if the volume was changed while playing the media file. |
-| `onwaiting` 		| ... if the media file is paused although it should continue to run. should be executed. This can be the case because more data has to be loaded into the buffer to must be loaded to continue the playback. |
+| `onwaiting` 		| ... if the media file is paused although it should continue to run. This can be the case because more data has to be loaded into the buffer to must be loaded to continue the playback. |
 
 
 ---------------------------------------------------------------------------------
