@@ -627,6 +627,106 @@ Detailed information about HTML can be found here - [HTML Guide](https://github.
 | `value` | Here you specify the value of the parameter for the plug-in. |
 
 
+## Global event attributes for HTML elements
+### Event attributes only for `<body>`
+| Event-Attribute   | Occurs ...                                              |
+| ----------------- | ------------------------------------------------------- |
+| `onafterprint`  	| ... after the document has been printed. |
+| `onbeforeprint` 	| ... before the document is printed. |
+| `onbeforeunload` 	| ... when the user wants to leave the page, e.g. by clicking on a link. This event attribute takes effect before onunload. |
+| `onerror` 		| ... if an error has occurred during the runtime of a script. With this you can catch script errors and react to them separately. |
+| `onhashchange` 	| ... if the anchor part of a URL (behind the # sign) has been changed. |
+| `onload` 			| ... when the page has finished loading. |
+| `onmessage` 		| ... if a message was sent to the active page with the method `postMessage()` page was sent. |
+| `onoffline` 		| ... when the web browser switches to offline mode. |
+| `ononline` 		| ... when the web browser switches to online mode. |
+| `onpagehide` 		| ... when the user navigates away from the web page. |
+| `onpageshow` 		| ... when the user navigates to the web page. In principle similar to onload, but the event is fired after onload and also every time, when the web page was loaded - even if the page was loaded from the cache (which onload does not do). |
+| `onpopstate` 		| ... when the history of the window has been changed. |
+| `onresize` 		| ... when the size of the web browser window changes. |
+| `onstorage` 		| ... when a web storage area has been renewed. |
+| `onunload` 		| ... when the user leaves the page or the web browser window is is closed. |
+
+
+### Event attributes for HTML form elements
+| Event-Attribute   | Occurs ...                                              |
+| ----------------- | ------------------------------------------------------- |
+| `onblur` 			| ... when the element loses focus. |
+| `onchange` 		| ... when the value of the element has changed. |
+| `oncontextmenu` 	| ... if the context menu was executed with a right mouse click. was executed. However, this only works in conjunction with the contextmenu attribute. |
+| `onfocus` 		| ... when an element receives the focus. |
+| `oninput` 		| ... when the content is changed by a user input. This is e.g. the case when the user is typing something into a single-line input field. For this reason this attribute only makes sense with the input elements of type password, search and text. But also the textarea element reacts to this. |
+| `oninvalid` 		| ... if an invalid entry was made. |
+| `onreset` 		| ... if the reset button was clicked. |
+| `onsearch` 		| ... if someone types something into the search field (e.g. in the inputElement of type search). |
+| `onselect` 		| ... when a text in an element has been selected (highlighted). |
+| `onsubmit` 		| ... when someone has clicked the submit button. |
+
+
+### Event attributes for keyboard actions
+| Event-Attribute   | Occurs ...                                              |
+| ----------------- | ------------------------------------------------------- |
+| `onkeydown` 		| ... when the user is currently pressing down the key. |
+| `onkeypress` 		| ... when the user is holding down the key. |
+| `onkeyup` 		| ... when the user releases the key. |
+
+
+### Event attributes for mouse action
+| Event-Attribute   | Occurs ...                                              |
+| ----------------- | ------------------------------------------------------- |
+| `onclick` 		| ... when a mouse click was made on an element. |
+| `ondblclick` 		| ... when a double click was made on an element. |
+| `ondrag` 			| ... when an element is dragged. |
+| `ondragend` 		| ... when ending the dragging process. |
+| `ondragenter` 	| ... when a dragged element has been dragged to a valid drop target. |
+| `ondragleave` 	| ... when a dragged element leaves a valid drop target. |
+| `ondragover` 		| ... when a dragged element is directly above a drop element. |
+| `ondragstart` 	| ... when the drag operation has been started. |
+| `ondrop` 			| ... when a draggable element has been dropped onto a valid drop target. |
+| `onmousedown` 	| ... when the mouse button is pressed down over an element. |
+| `onmousemove` 	| ... when the mouse pointer is over an element and is moved while is moved. |
+| `onmouseout` 		| ... when the mouse pointer leaves an element. |
+| `onmouseover` 	| ... when the mouse pointer is over an element. |
+| `onmouseup` 		| ... if the mouse button is released while it is over an element. |
+| `onscroll` 		| ... when the scrollbar of an element is used. |
+| `onwheel` 		| ... when the mouse wheel is rotated up or down over an element. |
+
+
+### Event attributes for clipboard actions
+| Event-Attribute   | Occurs ...                                              |
+| ----------------- | ------------------------------------------------------- |
+| `oncopy` 			| ... when the user copies the content of an element to the clipboard. |
+| `oncut` 			| ... when the user copies the content of an element to the clipboard using the Cut command. |
+| `onpaste` 		| ... when the user inserts a content from the clipboard into an element. |
+
+
+### Event attributes for video, images, and audio
+| Event-Attribute   | Occurs ...                                              |
+| ----------------- | ------------------------------------------------------- |
+| `onabort` 		| ... when the loading process is aborted. |
+| `oncanplay` 		| ... when sufficient data has been loaded into the buffer so that the file is ready for playback. |
+| `oncanplaythrough`| ... when the complete data is ready for playback. |
+| `oncuechange` 	| ... if a timed cue was changed on the track element. |
+| `ondurationchange`| ... if the playing time of the audio or video file has been changed. |
+| `onemptied` 		| ... if an error occurs during playback (e.g. transfer error) and the file is no longer accessible. |
+| `onended` 		| ... if the audio or video file was played completely to the end |
+| `onerror` 		| ... if an error occurred while loading the file. |
+| `onloadeddata` 	| ... when the audio or video file is completely loaded. |
+| `onloadedmetadata`| ... when the media file metadata has been completely loaded. |
+| `onloadstart` 	| ... when it starts loading the media file. |
+| `onpause` 		| ... when the media file is paused. |
+| `onplay` 			| ... when the media file is ready to be played. |
+| `onplaying` 		| ... when it has been started to play the media file. |
+| `onprogress` 		| ... when the web browser is in the process of fetching the media file. |
+| `onratechange` 	| ... when the playback speed has been changed. |
+| `onstalled` 		| ... when the web browser tries to fetch the media file, but this operation does not work for some reason. |
+| `onseeking` 		| ... when the user starts to move the current position of the audio or video video file to a new position or skips it. |
+| `onsuspend` 		| ... if the web browser wants to fetch the media file, but the process was stopped before the file was finished loading. |
+| `ontimeupdate` 	| ... if the playback position in the timeline has been changed. |
+| `onvolumechange` 	| ... if the volume was changed while playing the media file. |
+| `onwaiting` 		| ... if the media file is paused although it should continue to run. should be executed. This can be the case because more data has to be loaded into the buffer to must be loaded to continue the playback. |
+
+
 ---------------------------------------------------------------------------------
 ### The End
 
